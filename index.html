@@ -43,6 +43,8 @@
   }
   .meta { color: var(--muted); font-size: 0.9rem; }
   a { color: var(--blue); }
+  code { font-size: 0.9em; background: #efece4; padding: 1px 5px;
+    border-radius: 4px; word-break: break-all; }
   .divider { margin: 56px 0; border: none; border-top: 1px solid #d8d2c4; }
   footer {
     margin-top: 56px; padding-top: 20px;
@@ -163,11 +165,22 @@
       <li>All sparad historik kan raderas via appens inställningar.</li>
       <li>Du kan stänga av ”Spara historik” så att inga transkriberingar
         sparas.</li>
-      <li>Om du avinstallerar appen raderas all appdata — ljud,
-        transkriberingar och den nedladdade modellen — från din enhet.</li>
+      <li>På iPhone och iPad raderas all appdata — ljud, transkriberingar och
+        den nedladdade modellen — när du raderar appen.</li>
     </ul>
     <p>Eftersom vi inte har någon kopia av dina data behöver du inte kontakta
     oss för att radera dem. Du gör det själv, direkt på din enhet.</p>
+    <p><strong>På Mac fungerar det annorlunda.</strong> När du flyttar en app
+    till papperskorgen tar macOS bort själva appen, men behåller appens data —
+    det gäller alla appar, inte bara Diktera. Vill du få bort allt: radera
+    innehållet i appen först (Inställningar → Radera all historik, och Radera på
+    varje modell), eller ta bort mappen
+    <code>~/Library/Containers/com.talskrift.diktera</code>.</p>
+    <p>Två saker till, på iPhone och iPad: om du använder ”Avlasta app” i iOS
+    behålls dina data med avsikt — bara appen tas bort. Och om du har
+    säkerhetskopiering till iCloud påslagen finns en kopia i säkerhetskopian
+    även efter att du raderat appen från enheten, tills säkerhetskopian i sig
+    ersätts eller tas bort.</p>
 
     <h2>9. Barn</h2>
     <p>Appen är inte riktad till barn och samlar inte medvetet in uppgifter om
@@ -300,11 +313,21 @@
         app.</li>
       <li>All saved history can be deleted from the app's settings.</li>
       <li>You can turn off "Save history" so that no transcripts are stored.</li>
-      <li>If you uninstall the app, all app data — audio, transcripts, and the
-        downloaded model — is removed from your device.</li>
+      <li>On iPhone and iPad, deleting the app removes all app data — audio,
+        transcripts, and the downloaded model.</li>
     </ul>
     <p>Because we hold no copy of your data, you do not need to contact us to
     delete it. You do it yourself, directly on your device.</p>
+    <p><strong>On Mac it works differently.</strong> When you move an app to the
+    Bin, macOS removes the app itself but keeps the app's data — this applies to
+    every app, not just Diktera. To remove everything: delete the content in the
+    app first (Settings → Delete all history, and Delete on each model), or
+    remove the folder
+    <code>~/Library/Containers/com.talskrift.diktera</code>.</p>
+    <p>Two further points on iPhone and iPad: if you use iOS's "Offload App",
+    your data is kept deliberately — only the app is removed. And if you have
+    iCloud Backup switched on, a copy remains in that backup after you delete
+    the app from the device, until the backup itself is replaced or removed.</p>
 
     <h2>9. Children</h2>
     <p>The app is not directed at children and does not knowingly collect data
