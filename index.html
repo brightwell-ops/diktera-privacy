@@ -1,144 +1,341 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diktera — Integritetspolicy / Privacy Policy</title>
 <style>
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    max-width:720px;margin:0 auto;padding:32px 20px 64px;
-    color:#1a1a1a;line-height:1.6;font-size:16px;
+  :root {
+    --blue: #005293;
+    --gold: #FECC02;
+    --bg: #FAF8F3;
+    --ink: #1a2b3c;
+    --muted: #5a6b7c;
   }
-  h1{font-size:26px;margin:0 0 4px}
-  h2{font-size:21px;margin:40px 0 8px;border-top:1px solid #eee;padding-top:24px}
-  h3{font-size:17px;margin:24px 0 6px}
-  .updated{color:#666;font-size:14px;margin-bottom:8px}
-  .lead{background:#f4f6f9;border-radius:10px;padding:14px 16px;margin:16px 0}
-  ul{padding-left:22px}
-  li{margin:4px 0}
-  a{color:#1b5c9e}
-  .divider{margin:48px 0;border:0;border-top:2px solid #e6e6e6}
-  .foot{margin-top:48px;color:#888;font-size:13px;text-align:center}
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 24px 80px; }
+  header {
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  h1 { color: var(--blue); font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { color: var(--blue); font-size: 1.3rem; margin-top: 40px; }
+  h3 { font-size: 1.05rem; margin-top: 26px; margin-bottom: 4px; }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .lede {
+    background: #fff;
+    border-left: 4px solid var(--blue);
+    padding: 16px 18px;
+    border-radius: 6px;
+    margin: 18px 0 28px;
+  }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--blue); }
+  .divider { margin: 56px 0; border: none; border-top: 1px solid #d8d2c4; }
+  footer {
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid #d8d2c4;
+    color: var(--muted); font-size: 0.85rem;
+  }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Diktera — Integritetspolicy</h1>
-<p class="updated">Senast uppdaterad / Last updated: 16 juni 2026</p>
-<p><em>In English ↓</em></p>
+  <header>
+    <h1>Diktera — Integritetspolicy</h1>
+    <p class="meta">Senast uppdaterad / Last updated: 2026-08-15 &nbsp;·&nbsp;
+      <a href="#english">In English &darr;</a></p>
+  </header>
 
-<p class="lead">Diktera (”appen”, ”vi”, ”oss”) är en app för taligenkänning på svenska. Den korta versionen: Diktera är byggd för att fungera helt på din enhet. Vi samlar inte in, lagrar inte och överför inte dina inspelningar eller dina transkriberingar. Det ljud och den text du sparar stannar på din enhet tills du själv raderar det.</p>
+  <!-- ══════════════════ SVENSKA ══════════════════ -->
+  <section>
+    <div class="lede">
+      <p>Diktera är en app som omvandlar tal till text. Den korta versionen:
+      <strong>allt sker på din egen enhet.</strong> Vi samlar inte in, lagrar
+      inte och tar aldrig emot dina inspelningar eller dina transkriberingar.
+      Det enda appen hämtar från internet är själva språkmodellen, en gång.</p>
+    </div>
 
-<h3>1. Vem ansvarar för appen</h3>
-<p>Appen tillhandahålls av Ripudaman Singh Khurana, baserad i Sverige. Vid frågor om integritet, kontakta oss på <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+    <h2>1. Vem ansvarar för appen</h2>
+    <p>Appen tillhandahålls av Ripudaman Singh Khurana, med säte i Sverige.
+    Vid frågor om integritet, kontakta oss på
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
 
-<h3>2. Vilken information appen hanterar</h3>
-<p><strong>Ljudinspelningar.</strong> När du spelar in sparas ljudet på din enhet. Om du har valt att spara historik bevaras ljudinspelningen lokalt i appens eget lagringsutrymme tills du själv raderar den. Inspelningen lämnar aldrig din enhet och skickas aldrig till oss eller till någon tredje part.</p>
-<p><strong>Transkriberingar.</strong> Den text som skapas från din inspelning sparas lokalt på din enhet, i appens eget lagringsutrymme, om du har valt att spara historik. Texten bevaras tills du själv raderar den.</p>
-<p><strong>Projekt.</strong> Du kan ordna dina inspelningar och transkriberingar i projekt (mappar) som du själv skapar. Denna organisation lagras endast lokalt på din enhet.</p>
-<p><strong>Taligenkänningsmodell.</strong> Appen laddar ned en taligenkänningsmodell (KB-Whisper) en gång vid installation. Nedladdningen sker från en publik modellvärd. Inget av ditt ljud eller din text skickas vid denna nedladdning — det är endast appen som hämtar en fil.</p>
+    <h2>2. Vilken information appen hanterar</h2>
 
-<h3>3. Vad appen INTE gör</h3>
-<ul>
-<li>Appen samlar inte in personuppgifter.</li>
-<li>Appen kräver inget konto och ingen inloggning.</li>
-<li>Appen skickar inte dina inspelningar eller transkriberingar till oss eller till någon tredje part.</li>
-<li>Appen innehåller ingen analys (analytics), spårning eller annonsering.</li>
-<li>Appen använder ingen molntjänst för att bearbeta ditt tal. All transkribering sker på din enhet (on-device).</li>
-</ul>
+    <h3>Ljudinspelningar</h3>
+    <p>När du spelar in sparas ljudet som en fil i appens eget lagringsutrymme på
+    din enhet. Ljudet sparas kvar tillsammans med transkriberingen, så att du kan
+    lyssna på inspelningen igen och så att texten kan färdigställas om något
+    avbryter appen mitt i. Inspelningen lämnar aldrig din enhet.</p>
 
-<h3>4. Mikrofonbehörighet</h3>
-<p>Appen begär åtkomst till din mikrofon. Detta används endast för att spela in ljud som du själv väljer att spela in, och endast medan du aktivt använder inspelningsfunktionen. Du kan när som helst återkalla mikrofonåtkomsten i din enhets inställningar (Inställningar → Diktera → Mikrofon). Utan mikrofonåtkomst kan appens inspelningsfunktion inte användas.</p>
+    <h3>Importerade ljudfiler</h3>
+    <p>Om du importerar en ljudfil kopieras den till appens lagringsutrymme och
+    behandlas därefter på samma sätt som en inspelning du själv gjort. Din
+    ursprungliga fil ändras inte och flyttas inte.</p>
 
-<h3>5. Var dina data lagras</h3>
-<p>All data — dina sparade ljudinspelningar, dina sparade transkriberingar, dina projekt och din nedladdade modell — lagras lokalt på din enhet. Vi har ingen server och ingen databas där dina data skulle kunna lagras. Eftersom data lagras i appens eget lagringsutrymme är den endast tillgänglig på den enhet där den skapades.</p>
+    <h3>Transkriberingar</h3>
+    <p>Den text som skapas sparas lokalt på din enhet, i appens eget
+    lagringsutrymme, om du har valt att spara historik.</p>
 
-<h3>6. Hur du raderar dina data</h3>
-<p>Du har full kontroll över dina data, direkt i appen:</p>
-<ul>
-<li>En enskild transkribering kan raderas i appen.</li>
-<li>En enskild inspelnings ljud kan raderas medan transkriberingen behålls (”Radera ljud”).</li>
-<li>Du kan välja att radera enbart ljudet för all historik (och behålla texten), eller radera allt (ljud och text), via Inställningar → Radera all historik.</li>
-<li>Du kan stänga av ”Spara historik” så att inga inspelningar eller transkriberingar sparas.</li>
-<li>Om du avinstallerar appen raderas all appdata, inklusive alla inspelningar, transkriberingar och den nedladdade modellen, från din enhet.</li>
-</ul>
-<p>Eftersom vi inte har någon kopia av dina data behöver du inte kontakta oss för att radera dem — du gör det själv, direkt på din enhet.</p>
+    <h3>Namn och projekt</h3>
+    <p>Namn på inspelningar och projekt som du själv skriver sparas lokalt på
+    samma sätt som transkriberingarna.</p>
 
-<h3>7. Delning av data</h3>
-<p>Om du själv väljer att använda ”Dela”-funktionen för en transkribering, skickas texten till den app eller mottagare du väljer (t.ex. e-post eller meddelandeapp). Detta sker på din uttryckliga begäran och styrs av integritetspolicyn för den mottagande appen eller tjänsten. Diktera delar aldrig något automatiskt.</p>
+    <h3>Språkmodell</h3>
+    <p>Appen laddar ned en språkmodell för taligenkänning (KB-Whisper från KBLab
+    vid Kungliga biblioteket) en gång, från en publik modellvärd. Inget av ditt
+    ljud, din text eller någon uppgift om dig skickas vid denna nedladdning —
+    appen hämtar endast en fil. Detta är den enda gången appen använder
+    internet.</p>
 
-<h3>8. Barn</h3>
-<p>Appen är inte riktad till barn och samlar inte medvetet in uppgifter om barn. Eftersom appen inte samlar in några personuppgifter alls gäller detta alla användare oavsett ålder.</p>
+    <h2>3. Inspelning när skärmen är låst</h2>
+    <p>Appen kan fortsätta spela in när du låser skärmen eller byter till en
+    annan app. Det är avsiktligt: en föreläsning eller ett möte är oftast längre
+    än du håller skärmen tänd, och utan detta skulle inspelningen tystna utan
+    att du märkte det.</p>
+    <p>Inspelning i bakgrunden startar aldrig av sig själv — den fortsätter
+    endast en inspelning som du själv har startat. iOS visar sin egen
+    inspelningsindikator hela tiden. Du kan stänga av funktionen i appens
+    inställningar; då avslutas inspelningen när skärmen låses.</p>
 
-<h3>9. Dina rättigheter enligt GDPR</h3>
-<p>Diktera samlar inte in eller behandlar dina personuppgifter på någon server. Det ljud och den text du skapar lagras endast lokalt på din enhet och kontrolleras helt av dig — du kan när som helst se eller radera det direkt i appen. Eftersom vi inte har någon kopia av dina data finns det inga uppgifter hos oss att begära ut, rätta eller radera.</p>
-<p>Du har ändå alltid rätt att kontakta oss med frågor om hur appen hanterar information, på <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>. Du har även rätt att lämna klagomål till Integritetsskyddsmyndigheten (IMY) i Sverige.</p>
+    <h2>4. Vad appen INTE gör</h2>
+    <ul>
+      <li>Appen samlar inte in personuppgifter.</li>
+      <li>Appen kräver inget konto och ingen inloggning.</li>
+      <li>Appen skickar inte dina inspelningar eller transkriberingar till oss
+        eller till någon tredje part.</li>
+      <li>Appen innehåller ingen analys, spårning eller annonsering.</li>
+      <li>Appen använder ingen molntjänst för att bearbeta ditt tal. All
+        transkribering sker på din enhet.</li>
+      <li>Appen synkroniserar ingenting mellan dina enheter. Varje enhet står
+        för sig.</li>
+    </ul>
 
-<h3>10. Ändringar i denna policy</h3>
-<p>Om appens funktion ändras i en framtida version på ett sätt som påverkar hanteringen av information, uppdaterar vi denna policy och anger ett nytt ”senast uppdaterad”-datum. Väsentliga ändringar kommer att kommuniceras i appen eller på App Store-sidan.</p>
+    <h2>5. Mikrofonbehörighet</h2>
+    <p>Appen begär åtkomst till din mikrofon. Den används endast för att spela
+    in ljud som du själv väljer att spela in, och endast medan en inspelning
+    pågår. Du kan när som helst återkalla åtkomsten i enhetens inställningar
+    (Inställningar → Diktera → Mikrofon). Utan mikrofonåtkomst kan appens
+    inspelningsfunktion inte användas.</p>
 
-<h3>11. Kontakt</h3>
-<p>Frågor om denna integritetspolicy: <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+    <h2>6. Var dina data lagras</h2>
+    <p>All data — inspelat och importerat ljud, sparade transkriberingar, namn
+    och projekt, samt den nedladdade språkmodellen — lagras lokalt på din enhet.
+    Vi har ingen server och ingen databas där dina data skulle kunna lagras.</p>
+    <p>En sak är värd att veta om enhetens säkerhetskopior: om du har
+    säkerhetskopiering till iCloud påslagen ingår appens innehåll — inspelningar
+    och transkriberingar — i enhetens säkerhetskopia, precis som innehållet i
+    alla andra appar. Det är ingen överföring som Diktera gör eller kan se.
+    Säkerhetskopian hanteras av Apple enligt Apples villkor, är krypterad, och
+    vi har ingen åtkomst till den. Du kan stänga av säkerhetskopiering för
+    Diktera i Inställningar → [ditt namn] → iCloud → Hantera lagring →
+    Säkerhetskopior.</p>
+    <p>Vi har valt att inte undanta inspelningarna från säkerhetskopiering,
+    eftersom det skulle innebära att du förlorade allt om du bytte telefon —
+    och att ingenting går förlorat är en av appens grundprinciper.</p>
 
-<hr class="divider">
+    <h2>7. När du själv delar eller exporterar</h2>
+    <p>Du kan dela en enskild transkribering, eller exportera allt innehåll som
+    en zip-fil till exempelvis Filer, iCloud Drive eller Google Drive. Detta
+    sker endast på din uttryckliga begäran, och du väljer själv mottagaren.
+    Exporten kan innehålla både text och ljud. Vad som händer med filen därefter
+    styrs av villkoren för den app eller tjänst du valt. Diktera delar aldrig
+    något automatiskt.</p>
 
-<h1>Diktera — Privacy Policy (English)</h1>
+    <h2>8. Hur du raderar dina data</h2>
+    <ul>
+      <li>En enskild inspelning med tillhörande ljud och text kan raderas i
+        appen.</li>
+      <li>All sparad historik kan raderas via appens inställningar.</li>
+      <li>Du kan stänga av ”Spara historik” så att inga transkriberingar
+        sparas.</li>
+      <li>Om du avinstallerar appen raderas all appdata — ljud,
+        transkriberingar och den nedladdade modellen — från din enhet.</li>
+    </ul>
+    <p>Eftersom vi inte har någon kopia av dina data behöver du inte kontakta
+    oss för att radera dem. Du gör det själv, direkt på din enhet.</p>
 
-<p class="lead">Diktera (”the app”, ”we”, ”us”) is a Swedish speech-to-text app. The short version: Diktera is built to run entirely on your device. We do not collect, store, or transmit your recordings or your transcripts. The audio and text you save stay on your device until you delete them yourself.</p>
+    <h2>9. Barn</h2>
+    <p>Appen är inte riktad till barn och samlar inte medvetet in uppgifter om
+    barn. Eftersom appen inte samlar in några personuppgifter alls gäller detta
+    alla användare oavsett ålder.</p>
 
-<h3>1. Who is responsible for the app</h3>
-<p>The app is provided by Ripudaman Singh Khurana, based in Sweden. For privacy questions, contact us at <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+    <h2>10. Dina rättigheter enligt GDPR</h2>
+    <p>Eftersom Diktera inte samlar in eller behandlar personuppgifter på någon
+    server finns det inga uppgifter hos oss att begära ut, rätta eller radera.
+    Du har ändå alltid rätt att kontakta oss med frågor om hur appen hanterar
+    information, på
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>, och
+    rätt att lämna klagomål till Integritetsskyddsmyndigheten (IMY).</p>
+    <p>Om du spelar in andra personer är det du, inte vi, som avgör om och hur
+    det får ske. Appen ger dig kontroll över materialet men ändrar inte de
+    regler som gäller för dig eller din verksamhet.</p>
 
-<h3>2. What information the app handles</h3>
-<p><strong>Audio recordings.</strong> When you record, the audio is saved on your device. If you have chosen to save history, the audio recording is kept locally in the app's own storage until you delete it yourself. The recording never leaves your device and is never sent to us or to any third party.</p>
-<p><strong>Transcripts.</strong> The text produced from your recording is stored locally on your device, in the app's own storage, if you have chosen to save history. The text is kept until you delete it yourself.</p>
-<p><strong>Projects.</strong> You can organize your recordings and transcripts into projects (folders) that you create. This organization is stored only locally on your device.</p>
-<p><strong>Speech recognition model.</strong> The app downloads a speech recognition model (KB-Whisper) once, at setup. The download comes from a public model host. None of your audio or text is sent during this download — the app is only retrieving a file.</p>
+    <h2>11. Ändringar i denna policy</h2>
+    <p>Om appens funktion ändras på ett sätt som påverkar hanteringen av
+    information uppdaterar vi denna policy och anger ett nytt datum ovan.
+    Väsentliga ändringar kommuniceras i appen eller på App Store-sidan.</p>
 
-<h3>3. What the app does NOT do</h3>
-<ul>
-<li>The app does not collect personal data.</li>
-<li>The app requires no account and no login.</li>
-<li>The app does not send your recordings or transcripts to us or to any third party.</li>
-<li>The app contains no analytics, tracking, or advertising.</li>
-<li>The app uses no cloud service to process your speech. All transcription happens on your device (on-device).</li>
-</ul>
+    <h2>12. Kontakt</h2>
+    <p>Frågor om denna integritetspolicy:
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+  </section>
 
-<h3>4. Microphone permission</h3>
-<p>The app requests access to your microphone. This is used only to record audio that you choose to record, and only while you are actively using the recording feature. You can revoke microphone access at any time in your device settings (Settings → Diktera → Microphone). Without microphone access, the app's recording feature cannot be used.</p>
+  <hr class="divider">
 
-<h3>5. Where your data is stored</h3>
-<p>All data — your saved audio recordings, your saved transcripts, your projects, and your downloaded model — is stored locally on your device. We operate no server and no database in which your data could be stored. Because data is stored in the app's own storage, it is only available on the device where it was created.</p>
+  <!-- ══════════════════ ENGLISH ══════════════════ -->
+  <section id="english">
+    <h1>Diktera — Privacy Policy</h1>
 
-<h3>6. How to delete your data</h3>
-<p>You have full control over your data, directly in the app:</p>
-<ul>
-<li>An individual transcript can be deleted in the app.</li>
-<li>The audio of an individual recording can be deleted while keeping the transcript (”Radera ljud” / ”Delete audio”).</li>
-<li>You can choose to delete only the audio for all history (keeping the text), or delete everything (audio and text), via Settings → Delete all history.</li>
-<li>You can turn off ”Save history” so that no recordings or transcripts are stored.</li>
-<li>If you uninstall the app, all app data — including all recordings, transcripts, and the downloaded model — is removed from your device.</li>
-</ul>
-<p>Because we hold no copy of your data, you do not need to contact us to delete it — you do it yourself, directly on your device.</p>
+    <div class="lede">
+      <p>Diktera turns speech into text. The short version:
+      <strong>everything happens on your own device.</strong> We do not collect,
+      store, or ever receive your recordings or your transcripts. The only thing
+      the app fetches from the internet is the speech model itself, once.</p>
+    </div>
 
-<h3>7. Sharing data</h3>
-<p>If you choose to use the ”Share” function for a transcript, the text is sent to the app or recipient you select (for example, an email or messaging app). This happens at your explicit request and is governed by the privacy policy of the receiving app or service. Diktera never shares anything automatically.</p>
+    <h2>1. Who is responsible for the app</h2>
+    <p>The app is provided by Ripudaman Singh Khurana, based in Sweden. For
+    privacy questions, contact us at
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
 
-<h3>8. Children</h3>
-<p>The app is not directed at children and does not knowingly collect data about children. Because the app collects no personal data at all, this applies to all users regardless of age.</p>
+    <h2>2. What information the app handles</h2>
 
-<h3>9. Your rights under the GDPR</h3>
-<p>Diktera does not collect or process your personal data on any server. The audio and text you create are stored only locally on your device and are entirely under your control — you can view or delete them directly in the app at any time. Because we hold no copy of your data, there is no data held by us to access, correct, or erase.</p>
-<p>You always have the right to contact us with questions about how the app handles information, at <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>. You also have the right to lodge a complaint with the Swedish data protection authority (IMY, Integritetsskyddsmyndigheten).</p>
+    <h3>Audio recordings</h3>
+    <p>When you record, the audio is saved as a file in the app's own storage on
+    your device. It is kept alongside the transcript so that you can listen back,
+    and so that the transcript can be completed if something interrupts the app
+    mid-recording. The recording never leaves your device.</p>
 
-<h3>10. Changes to this policy</h3>
-<p>If the app's functionality changes in a future version in a way that affects how information is handled, we will update this policy and set a new ”last updated” date. Material changes will be communicated in the app or on the App Store page.</p>
+    <h3>Imported audio files</h3>
+    <p>If you import an audio file, it is copied into the app's storage and then
+    handled the same way as a recording you made yourself. Your original file is
+    not modified or moved.</p>
 
-<h3>11. Contact</h3>
-<p>Questions about this privacy policy: <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+    <h3>Transcripts</h3>
+    <p>The text produced is stored locally on your device, in the app's own
+    storage, if you have chosen to save history.</p>
 
-<p class="foot">Diktera · Integritetspolicy / Privacy Policy</p>
+    <h3>Titles and projects</h3>
+    <p>Recording titles and project names you type are stored locally, the same
+    way as transcripts.</p>
 
+    <h3>Speech model</h3>
+    <p>The app downloads a speech recognition model (KB-Whisper, from KBLab at
+    the National Library of Sweden) once, from a public model host. None of your
+    audio, your text, or any information about you is sent during this download —
+    the app is only retrieving a file. This is the only time the app uses the
+    internet.</p>
+
+    <h2>3. Recording while the screen is locked</h2>
+    <p>The app can keep recording when you lock the screen or switch to another
+    app. This is deliberate: a lecture or a meeting usually runs longer than you
+    keep the screen on, and without it the recording would stop without your
+    noticing.</p>
+    <p>Background recording never starts on its own — it only continues a
+    recording you started yourself. iOS shows its own recording indicator
+    throughout. You can turn the feature off in the app's settings, after which
+    recording ends when the screen locks.</p>
+
+    <h2>4. What the app does NOT do</h2>
+    <ul>
+      <li>The app does not collect personal data.</li>
+      <li>The app requires no account and no login.</li>
+      <li>The app does not send your recordings or transcripts to us or to any
+        third party.</li>
+      <li>The app contains no analytics, tracking, or advertising.</li>
+      <li>The app uses no cloud service to process your speech. All
+        transcription happens on your device.</li>
+      <li>The app does not sync anything between your devices. Each device
+        stands alone.</li>
+    </ul>
+
+    <h2>5. Microphone permission</h2>
+    <p>The app requests access to your microphone. It is used only to record
+    audio that you choose to record, and only while a recording is running. You
+    can revoke access at any time in your device settings (Settings → Diktera →
+    Microphone). Without microphone access, the recording feature cannot be
+    used.</p>
+
+    <h2>6. Where your data is stored</h2>
+    <p>All data — recorded and imported audio, saved transcripts, titles and
+    projects, and the downloaded speech model — is stored locally on your device.
+    We operate no server and no database in which your data could be stored.</p>
+    <p>One thing worth knowing about device backups: if you have iCloud Backup
+    switched on, the app's contents — recordings and transcripts — are included
+    in your device backup, the same way every other app's data is. This is not a
+    transfer Diktera performs or can observe. The backup is handled by Apple
+    under Apple's terms, is encrypted, and we have no access to it. You can turn
+    backup off for Diktera in Settings → [your name] → iCloud → Manage Storage →
+    Backups.</p>
+    <p>We have chosen not to exclude recordings from backup, because doing so
+    would mean losing everything when you moved to a new phone — and nothing
+    getting lost is one of the app's founding principles.</p>
+
+    <h2>7. When you share or export</h2>
+    <p>You can share an individual transcript, or export everything as a zip file
+    to destinations such as Files, iCloud Drive or Google Drive. This happens
+    only at your explicit request, and you choose the destination. An export may
+    contain both text and audio. What happens to the file afterwards is governed
+    by the terms of the app or service you chose. Diktera never shares anything
+    automatically.</p>
+
+    <h2>8. How to delete your data</h2>
+    <ul>
+      <li>An individual recording, with its audio and text, can be deleted in the
+        app.</li>
+      <li>All saved history can be deleted from the app's settings.</li>
+      <li>You can turn off "Save history" so that no transcripts are stored.</li>
+      <li>If you uninstall the app, all app data — audio, transcripts, and the
+        downloaded model — is removed from your device.</li>
+    </ul>
+    <p>Because we hold no copy of your data, you do not need to contact us to
+    delete it. You do it yourself, directly on your device.</p>
+
+    <h2>9. Children</h2>
+    <p>The app is not directed at children and does not knowingly collect data
+    about children. Because the app collects no personal data at all, this
+    applies to all users regardless of age.</p>
+
+    <h2>10. Your rights under the GDPR</h2>
+    <p>Because Diktera does not collect or process personal data on any server,
+    there is no data held by us to access, correct, or erase. You always have the
+    right to contact us with questions about how the app handles information, at
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>, and to
+    lodge a complaint with the Swedish data protection authority (IMY).</p>
+    <p>If you record other people, it is you, not us, who decides whether and how
+    that may happen. The app gives you control over the material but does not
+    change the rules that apply to you or your organisation.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If the app's functionality changes in a way that affects how information
+    is handled, we will update this policy and set a new date above. Material
+    changes will be communicated in the app or on the App Store page.</p>
+
+    <h2>12. Contact</h2>
+    <p>Questions about this privacy policy:
+    <a href="mailto:bridgewell.sv@gmail.com">bridgewell.sv@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>Diktera &middot; Integritetspolicy / Privacy Policy &middot;
+      <a href="support.html">Support</a></p>
+  </footer>
+
+</div>
 </body>
 </html>

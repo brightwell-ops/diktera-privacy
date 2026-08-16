@@ -22,11 +22,7 @@
     line-height: 1.6;
     -webkit-text-size-adjust: 100%;
   }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 32px 24px 80px;
-  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 24px 80px; }
   header {
     border-bottom: 3px solid var(--gold);
     padding-bottom: 20px;
@@ -74,28 +70,56 @@
 
     <h3>Lämnar mina inspelningar någonsin telefonen?</h3>
     <p>Nej. All taligenkänning sker direkt på din enhet. Dina inspelningar och
-    transkriberingar skickas aldrig till någon server.</p>
+    transkriberingar skickas aldrig till någon server. Det enda appen hämtar
+    från internet är språkmodellen, en gång.</p>
+
+    <h3>Vilka språk stöds?</h3>
+    <p>Svenska och engelska. Det finns två svenska modeller — Svenska Standard
+    för bästa noggrannhet och Svenska Lite för korta, snabba anteckningar — samt
+    English Standard för engelskt ljud. Du väljer själv vilken som används.</p>
+
+    <h3>Fungerar appen offline?</h3>
+    <p>Ja, efter att språkmodellen laddats ned en gång. Därefter behövs ingen
+    internetanslutning — du kan slå på flygplansläge och spela in som vanligt.</p>
+
+    <h3>Hur lång får en inspelning vara?</h3>
+    <p>Upp till 45 minuter i sträck på nyare iPhone, iPad och Mac, och 30 minuter
+    på enheter med mindre minne. Läget där du spelar in först och transkriberar
+    efteråt är kortare. Ljudfiler du importerar får vara upp till två timmar —
+    appen erbjuder sig då att dela upp filen i flera inspelningar.</p>
+
+    <h3>Fortsätter inspelningen om jag låser skärmen?</h3>
+    <p>Ja. Du kan låsa skärmen, lägga telefonen i fickan eller byta app —
+    inspelningen fortsätter och texten kommer ikapp när du är tillbaka. Vill du
+    inte att den ska göra det kan du stänga av funktionen i appens
+    inställningar.</p>
+
+    <h3>Vad händer om appen avbryts mitt i?</h3>
+    <p>Ljudet finns kvar. Öppna inspelningen igen så kan texten färdigställas
+    med ett tryck.</p>
+
+    <h3>Kan jag importera ljud jag redan spelat in?</h3>
+    <p>Ja — M4A (Röstmemon), MP3, AAC och WAV. Filen kopieras till appen och
+    transkriberas på enheten. Din ursprungliga fil rörs inte.</p>
+
+    <h3>Synkas mina inspelningar mellan telefon och iPad?</h3>
+    <p>Nej. Varje enhet står för sig, vilket är den direkta följden av att appen
+    inte har någon server. Du kan exportera och flytta texterna själv.</p>
 
     <h3>Varför behöver appen mikrofonåtkomst?</h3>
     <p>Mikrofonen används endast för att spela in det du själv väljer att spela
     in, och endast medan inspelningen pågår. Du kan återkalla åtkomsten i
     Inställningar → Diktera → Mikrofon.</p>
 
-    <h3>Vilka språk stöds?</h3>
-    <p>Diktera är optimerad för svenska.</p>
-
-    <h3>Fungerar appen offline?</h3>
-    <p>Ja, efter den första installationen då taligenkänningsmodellen laddas
-    ned. Därefter behövs ingen internetanslutning för att transkribera.</p>
-
     <h3>Hur raderar jag mina transkriberingar?</h3>
-    <p>Du kan radera en enskild transkribering i appen, eller all historik via
-    Inställningar → Radera all historik. Avinstallation av appen tar bort all
-    data från enheten.</p>
+    <p>Du kan radera en enskild inspelning i appen, eller all historik via
+    appens inställningar. Avinstallation av appen tar bort all data från
+    enheten.</p>
 
-    <h3>Varför känner appen inte igen vissa ord korrekt?</h3>
-    <p>Taligenkänning är inte alltid perfekt, särskilt med facktermer, namn
-    eller i bullriga miljöer. Du kan redigera texten efter transkriberingen.</p>
+    <h3>Varför blir vissa ord fel?</h3>
+    <p>Taligenkänning är inte perfekt, särskilt med facktermer, namn eller i
+    bullriga miljöer. Du kan redigera texten efteråt. Ett tips som gör stor
+    skillnad: ha mikrofonen så nära talaren som möjligt.</p>
   </section>
 
   <hr class="divider">
@@ -112,33 +136,61 @@
 
     <h3>Do my recordings ever leave the phone?</h3>
     <p>No. All speech recognition happens directly on your device. Your
-    recordings and transcripts are never sent to any server.</p>
+    recordings and transcripts are never sent to any server. The only thing the
+    app fetches from the internet is the speech model, once.</p>
+
+    <h3>Which languages are supported?</h3>
+    <p>Swedish and English. There are two Swedish models — Svenska Standard for
+    best accuracy and Svenska Lite for short, quick notes — plus English Standard
+    for English audio. You choose which one is used.</p>
+
+    <h3>Does the app work offline?</h3>
+    <p>Yes, once the speech model has been downloaded. After that no internet
+    connection is needed — you can turn on airplane mode and record as
+    normal.</p>
+
+    <h3>How long can a recording be?</h3>
+    <p>Up to 45 minutes in one go on newer iPhones, iPads and Macs, and 30
+    minutes on devices with less memory. Record-then-transcribe mode is shorter.
+    Audio files you import can be up to two hours — the app then offers to split
+    the file into several recordings.</p>
+
+    <h3>Does recording continue if I lock the screen?</h3>
+    <p>Yes. Lock the screen, put the phone in your pocket, or switch apps — the
+    recording continues and the transcript catches up when you return. If you'd
+    rather it didn't, you can turn the feature off in the app's settings.</p>
+
+    <h3>What happens if the app is interrupted?</h3>
+    <p>The audio is still there. Open the recording again and one tap completes
+    the transcript.</p>
+
+    <h3>Can I import audio I already recorded?</h3>
+    <p>Yes — M4A (Voice Memos), MP3, AAC and WAV. The file is copied into the app
+    and transcribed on the device. Your original file is left untouched.</p>
+
+    <h3>Do my recordings sync between my phone and my iPad?</h3>
+    <p>No. Each device stands alone, which is the direct consequence of the app
+    having no server. You can export transcripts and move them yourself.</p>
 
     <h3>Why does the app need microphone access?</h3>
     <p>The microphone is used only to record what you choose to record, and only
     while recording is active. You can revoke access in Settings → Diktera →
     Microphone.</p>
 
-    <h3>Which languages are supported?</h3>
-    <p>Diktera is optimised for Swedish.</p>
-
-    <h3>Does the app work offline?</h3>
-    <p>Yes, after the initial setup when the speech recognition model is
-    downloaded. After that, no internet connection is needed to transcribe.</p>
-
     <h3>How do I delete my transcripts?</h3>
-    <p>You can delete an individual transcript in the app, or all history via
-    Settings → Delete all history. Uninstalling the app removes all data from
-    your device.</p>
+    <p>You can delete an individual recording in the app, or all history from the
+    app's settings. Uninstalling the app removes all data from your device.</p>
 
-    <h3>Why doesn't the app recognise some words correctly?</h3>
-    <p>Speech recognition is not always perfect, especially with technical
-    terms, names, or in noisy environments. You can edit the text after
-    transcription.</p>
+    <h3>Why doesn't the app get some words right?</h3>
+    <p>Speech recognition is not perfect, especially with technical terms, names,
+    or in noisy environments. You can edit the text afterwards. One tip that
+    makes a real difference: get the microphone as close to the speaker as you
+    can.</p>
   </section>
 
   <footer>
-    <p>Diktera &middot; Support</p>
+    <p>Diktera &middot; Support &middot;
+      <a href="index.html">Integritetspolicy / Privacy Policy</a></p>
   </footer>
 
 </div>
